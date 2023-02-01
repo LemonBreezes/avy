@@ -913,7 +913,7 @@ multiple OVERLAY-FN invocations."
           (mapcar (lambda (w)
                     (let ((ol (make-overlay
                                (window-start w)
-                               (window-end w)
+                               (window-end w t)
                                (window-buffer w))))
                       (overlay-put ol 'face 'avy-background-face)
                       (overlay-put ol 'window w)
